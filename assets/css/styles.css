@@ -1,0 +1,414 @@
+:root {
+    --name-color: rgb(165, 165, 165);
+    --project-title-color: rgb(45, 45, 45);
+    --home-color: rgb(180, 226, 239);
+    --project-color: rgb(190, 238, 86);
+    --research-color: rgb(198, 179, 255);
+    --forfun-color: rgb(255, 184, 220);
+    --seungyun-color: rgb(210, 199, 39);
+    --small-title: rgb(181, 181, 181);
+    --hoveredGray: rgb(74, 74, 74);
+    --footnote-color: rgb(52, 52, 52);
+}
+@font-face {
+    font-family: instagram;
+    src: url(fonts/instagram.otf);
+}
+@font-face {
+    font-family: cool;
+    src: url(fonts/coolvetica\ rg.otf);
+}
+@font-face {
+    font-family: bebas;
+    src: url(fonts/BebasNeue-Regular.otf);
+}
+@font-face {
+    font-family: montLight;
+    src: url(fonts/Mont-ExtraLightDEMO.otf);
+}
+@font-face {
+font-family: montHeavy;
+    src: url(fonts/Mont-HeavyDEMO.otf);
+}
+@font-face {
+    font-family: boldFont;
+    src: url(fonts/THEBOLDFONT\ 2022.otf);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Main Page title of the website--------------------------------------*/
+
+.seungyeonjin {
+    font-family: "Helvetica";
+    font-size: 1.275rem;
+    font-weight: lighter;
+    color:var(--name-color);
+    text-decoration: none;
+    padding-top: 20px;    
+    padding-right: 10px;   
+    padding-bottom: 10px;    
+    padding-left: 10px;
+}
+
+.seungyeonjin:hover {
+    color: rgb(204, 0, 102);
+
+}
+
+.home-seungyeonjin {
+    font-family: "Helvetica";
+    font-size: 1.275rem;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;    
+    padding-right: 10px;   
+    padding-bottom: 10px;    
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.home-seungyeonjin:hover {
+    color: rgb(204, 0, 102);
+
+}
+
+
+.project-item {
+    text-decoration: none;
+    text-decoration-line: none;
+
+}
+.project-title-1 {
+    font-size: 1.0rem;
+    font-family: "Helvetica Neue";
+    color:var(--project-title-color);
+
+}
+
+
+
+.home-body-text-1 {
+    font-size:0.8rem;
+    font-family:"Helvetica";
+    font-weight:lighter;
+    color: rgb(120, 120, 120);
+}
+
+.home-body-text-2 {
+    font-size:0.85rem;
+    font-family:"Helvetica";
+    font-weight:lighter;
+    color: rgb(30, 30, 30);
+}
+
+.container {
+    align-items: end;
+}
+
+
+.projects-body-text {
+    font-size:1.1rem;
+    font-family:"Helvetica";
+    font-weight:lighter;
+    color: rgb(0, 0, 0);
+    line-height:160%;
+}
+
+
+.align-right {
+    text-align:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav bar -----------------------------------------------------------*/
+#navbar {
+    background-color: white;
+}
+.navbar.fixed-top {
+    position: fixed;
+    transition: top 0.3s;
+}
+
+
+.nav-shape .nav-text {
+    font-family: "Helvetica Neue";
+    font-size: 1.20rem;
+    text-align: center;
+    color: rgb(57, 57, 57);
+    
+}
+.nav-text.text-projects {
+    color: var(--project-color);
+}
+.link-projects:hover .text-projects {
+    color:rgb(100, 143, 51);
+}
+
+.nav-text.text-research {
+    color: var(--research-color);
+}
+.link-research:hover .text-research {
+    color: rgb(68, 45, 80);
+}
+
+.nav-text.text-forfun {
+    color: var(--forfun-color);
+}
+.link-forfun:hover .text-forfun {
+    color:#9e3357;
+}
+
+.menu-button-text {
+    color: black;
+}
+.menu-button {
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* sidebar -------------------------------------------*/
+
+
+.arrow {
+    font-family: system-ui;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.arrow:hover {
+    text-shadow: 3px 2px 2px gray;
+}
+
+.side-title {
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    position: fixed;
+    left: 2%;
+    /* font-family: montLight, Avenir, 'Helvetica Neue', sans-serif; */
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300;
+    color: var(--small-title);
+    bottom: -10%;
+    font-size: 3.75rem;
+    /* border: 4px solid black; */
+}
+
+/* .side-title.projects {
+    bottom: 2%;
+    font-size: 4rem;
+    overflow-x: hidden;
+    padding: 0.5rem;
+} */
+
+
+/* .side-title.research {
+    bottom: -5%;
+    left: 2%;
+    font-size: 3rem;
+    overflow-x: hidden;
+    letter-spacing: 4px;
+    padding: 1.25rem;
+} */
+
+
+
+@media all and (max-width: 1000px) {
+    #sidebar .title {
+        display: none;
+    }
+    #sidebar .sidenav-right {
+        display: none;
+    }
+    #sidebar .sidenav-left {
+        display: none;
+    }
+  }
+
+.sidenav-left {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 2%;
+    overflow-x: hidden;
+}
+
+.sidenav-right {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*detail pages*/
+
+.drawings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan-img {
+    width: 300px;
+}
+
+
+.project-desc {
+    margin: auto;
+    width: 80%;
+    align-items: center;
+}
+
+.project-desc-text {
+    font-size: 0.9rem;
+}
+
+.project-asset-title {
+    margin: auto;
+    width: 80%;
+}
+.project-asset-title-text {
+    font-size: 0.9rem;
+}
+
+
+
+/* projects page -------------------------------------------------------*/
+.project-item:hover {
+    text-shadow: 3px 2px 2px gray;
+    box-shadow: 3px 2px 2px gray;
+    background-color: var(--project-color);
+}
+
+.project-title {
+    font-size: 2rem;
+}
+.project-item.empty {
+    background-color: var(--project-color);
+    box-shadow: none;
+}
+
+
+
+
+
+
+/* footer styling */
+/* #footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px 30px;
+    top: 0;
+    left: 0;
+} */
+
+#footer {
+    margin-bottom: 120px;
+}
+
+/* spacing on all sections */
+#forfun, #projects, #research, #contact, #urp, #midlife, 
+#film, #home, #color, #poster, #bottom, #library,
+#tutu, #cg, #space, #dragndrop, #About, #earthquake {
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+#About {
+    margin-top: 4.625rem;
+    padding-top: 4.625rem;
+}
+
+#contact {
+    padding-bottom: 4rem;
+}
+
+
+
+
+
+
+.ninjastar-container {
+    position: absolute;
+    margin-left: 100px;
+
+}
+.ball-container {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+.square-container {
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 20px;
+}
+.back {
+    position: relative;
+}
